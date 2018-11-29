@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cancel"
+        android:icon="@drawable/ic_cancel"
+        android:title="Geri" />
+
+    <item
+        android:id="@+id/myFavorites"
+        android:icon="@drawable/ic_store"
+        android:title="Favorilerim" />
+
+    <item
+        android:id="@+id/myAccount"
+        android:icon="@drawable/ic_user"
+        android:title="Hesabım" />
+
+</menu>

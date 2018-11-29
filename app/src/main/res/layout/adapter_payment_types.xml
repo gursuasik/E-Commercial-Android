@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/paymentImageName"
+            android:layout_width="80dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/visa" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:text="Standart Teslimat"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginDimens"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/expand_more" />
+    </LinearLayout>
+</FrameLayout>

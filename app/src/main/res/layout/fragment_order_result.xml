@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OrderResultFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="İptal Et"
+                android:textColor="#D82424"
+                android:textSize="12sp"
+                app:fontFamily="@font/gotham_book" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Eve standart gönderi"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/deliveryMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/marginDimens"
+                android:layout_marginRight="20dp"
+                android:text="Perşembe 09 - Pazartesi 13"
+                android:textColor="#A5A5A5"
+                android:textSize="11sp"
+                app:fontFamily="@font/gotham_book" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Ev Adresim"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/addressMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/marginDimens"
+                android:layout_marginRight="20dp"
+                android:text="Kısıklı Cad. No:41 34662 Altunizade, Üsküdar/İstanbul - TÜRKİYE"
+                android:textColor="#A5A5A5"
+                android:textSize="11sp"
+                app:fontFamily="@font/gotham_book" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Ödeme Yöntemi"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginDimens">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/paymentIcon"
+                    android:layout_width="80dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/visa" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/cardName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginDimens"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Ayse Falanfilan"
+                    android:textColor="#A5A5A5"
+                    android:textSize="11sp"
+                    app:fontFamily="@font/gotham_book" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Ödeme Şekli"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/installment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/marginDimens"
+                android:layout_marginRight="20dp"
+                android:text="3 Taksit"
+                android:textColor="#A5A5A5"
+                android:textSize="11sp"
+                app:fontFamily="@font/gotham_book" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/payment"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="26dp"
+            android:text="Toplam"
+            android:textSize="13sp"
+            app:fontFamily="@font/gotham_bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/payment"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="26dp"
+            android:text="1.675,90 TL"
+            android:textSize="16sp"
+            app:fontFamily="@font/gotham_bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#28D36C"
+            android:text="ÖDEMEYİ ONAYLA"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:fontFamily="@font/gotham_book"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

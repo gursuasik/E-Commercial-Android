@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="logoTop">50dp</dimen>
+    <dimen name="logoLeft">30dp</dimen>
+
+    <dimen name="marginDimens">8dp</dimen>
+    <dimen name="paddingDimens">8dp</dimen>
+    <dimen name="padding2Dimens">16dp</dimen>
+
+    <dimen name="banner_layout_marginTop">4dp</dimen>
+
+
+</resources>

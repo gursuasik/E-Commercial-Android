@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GetOrderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/saleCode"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/marginDimens"
+                android:layout_marginRight="30dp"
+                android:text="0301D-8118-404293 Numaralı Siparişinizin Detayı" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:text="Sipariş Durumu"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="İade Tamamlandı" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:text="Sipariş Tarihi"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/saleCreateDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="22.03.2018 / 12:04" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="25dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:text="Sipariş Durumu"
+                    app:srcCompat="@drawable/truck" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="Kargo Takibi"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/marginDimens"
+                android:scrollbars="vertical"
+                app:layoutManager="LinearLayoutManager" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:text="Ödeme Tipi"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/paymentType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginDimens"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="İş Bankası" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:text="Teslimat Adresi:"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/addressType1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginDimens"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="Topçu İş Merkezi No:1 D:14 Kağıthane İstanbul Turkey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:text="Fatura Adresi:"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/addressType2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginDimens"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="Sanayi Mh Yunus Emre Cd Topçu İş Merkezi No:1 D:14 Kağıthane İstanbul Turkey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginBottom="@dimen/marginDimens"
+                    android:text="Toplam Tutar"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/sumPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginDimens"
+                    android:layout_marginTop="@dimen/marginDimens"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="@dimen/marginDimens"
+                    android:layout_weight="1"
+                    android:text="28.89 TL" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>
